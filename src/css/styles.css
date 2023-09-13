@@ -1,0 +1,138 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../images/bg-desktop.svg) no-repeat var(--violet);
+}
+
+.container {
+    display: flex;
+    height: 800px;
+}
+
+
+.img-logo {
+    width: 200px;
+    margin: 50px 0 0 100px;
+}
+
+
+
+.image-ilustration {
+    margin: 190px 0 0 -220px;
+}
+
+.content {
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 40px;
+
+
+}
+
+.content h1 {
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.content-p {
+    color: #fff;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.button {
+    margin: 50px 0 0 0;
+    padding-top: 15px;
+    color: var(--violet);
+    border: 0px solid;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: var(--soft-magenta);
+}
+
+.social {
+    display: flex;
+    position: absolute;
+    top: 730px;
+    left: 1200px;
+    gap: 15px;
+}
+
+.social a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    font-size: 15px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.social a i:hover {
+    color: var(--soft-magenta);
+}
+
+.social a:hover {
+    border: 1px solid var(--soft-magenta);
+}
+
+@media screen and (max-width: 768px) {
+   
+    body {
+        background: url(../images/bg-mobile.svg) no-repeat var(--violet);
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-logo {
+        width: 150px;
+        margin: 30px 0 0;
+        text-align: center;
+    }
+
+    .image-ilustration {
+        width: 300px;
+        margin: 30px 0 0 35px;
+        text-align: center;
+    }
+
+    .content {
+        text-align: center;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .button {
+        margin-left: 50px;
+        margin-top: 30px;
+        width: 60%;
+    }
+
+    .social {
+        margin-left: 90px;
+        position: static;
+        margin-top: 80px;
+    }
+}
